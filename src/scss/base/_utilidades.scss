@@ -1,0 +1,40 @@
+.seccion {
+    margin-top: 5rem;
+    margin-bottom: calc($separacion / 2);
+}
+.contenido-centrado {
+    max-width: 80rem;
+}
+.alinear-derecha{
+    display: flex;
+    justify-content: flex-end;
+}
+.w-100{
+    width: 100%;
+}
+.margin-top{
+    margin-top: 8.5rem;
+    @include tablet {
+        margin-top: 8rem;
+    }
+}
+.margin-top-2{
+    @include tablet {
+        margin-top: 2rem;
+    }
+}
+#nombre-cliente{
+
+    margin: 0 7rem;
+
+    @include telefono{
+        margin: 1rem 0;
+    }
+
+    span{
+        color: $cuarto;
+    }
+}
+.id-cliente{
+    display: none;
+}

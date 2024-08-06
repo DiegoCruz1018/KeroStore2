@@ -1,0 +1,59 @@
+.producto-grid{
+    margin-bottom: 2rem;
+
+    @include tablet {
+        @include grid(2, 2);
+        margin-bottom: 2rem;
+    }
+
+    .producto-grid-imagen{
+        margin-right: 2rem;
+        background-color: $quinto;
+        padding: .2rem;
+        
+        img{
+            height: 55rem;
+        }
+    }
+
+    .producto-grid-info{
+        @include tablet{
+            margin-top: 2rem;
+        }
+
+        .producto-detalle, label{
+            font-family: $fuente_header;
+            font-weight: bold;
+            color: $terciario;
+            text-align: center;
+            font-size: 2.5rem;
+
+            .producto-detalle-span{
+                font-family: $fuente_principal;
+                font-weight: normal;
+                color: $primario;
+            }
+
+            input{
+                width: 60%;
+                background-color: $blanco;
+                border: 1px solid $primario;
+                border-radius: 1rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.agregar-producto{
+
+    .info-publicidad2{
+        @include tablet{
+            @include grid(2, 2);
+        }
+    }
+
+    @include tablet{
+        @include grid(2, 2)
+    }
+}

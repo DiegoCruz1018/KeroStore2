@@ -1,0 +1,23 @@
+{
+    "name": "diego/kero-store2",
+    "description": "\"Proyecto PHP 8, MVC, SQL, JS y Fetch\"",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models",
+            "Classes\\" : "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Diego Armando Cruz Sepulveda",
+            "email": "diegocruzsep@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.5",
+        "vlucas/phpdotenv": "^5.4",
+        "intervention/image": "2"
+    }
+}

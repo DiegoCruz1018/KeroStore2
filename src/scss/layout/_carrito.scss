@@ -1,0 +1,117 @@
+.lista-carrito{
+    @include grid(1, 2);
+
+    @include tablet{
+        @include grid(2, 2);
+    }
+}
+
+.carrito{
+
+    display: grid;
+    justify-content: center;
+
+    .carrito-info{
+
+        width: 30rem;
+
+        @include tablet{
+            width: 50rem;
+        }
+    }
+    
+    .producto-info{
+        background-color: transparent;
+        border-radius: .5rem;
+        box-shadow: 1px 11px 12px 3px rgba(0, 0, 0, 0.3);
+        justify-content: center;
+
+        margin-bottom: 2rem;
+    }
+
+    .carrito-botones{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+
+        .boton-cantidad{
+            background-color: transparent;
+            border: 1px solid $grisClaro;
+            border-radius: .5rem;
+            padding: 1rem 1.2rem;
+            margin: .5rem;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        .boton-eliminar{
+            border: 1px solid $grisClaro;
+            background-color: transparent;
+            color: $negro;
+            padding: 1rem 2rem;
+            border-radius: .5rem;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.producto-nombre,
+.producto-precio,
+.carrito-total-titulo,
+.carrito-total-precio,
+.carrito-total-titulo,
+.carrito-total-productos{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.producto-precio,
+.carrito-total-precio,
+.carrito-total-productos{
+    color: $sexto;
+    margin: 0;
+}
+
+.carrito-pagar{
+    background-color: transparent;
+    border-radius: .5rem;
+    box-shadow: 1px 11px 12px 3px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    //max-width: 100%;
+    margin: 0 2rem;
+}
+
+.producto-id{
+    display: none;
+}
+
+.carrito-boton-pagar{
+    display: flex;
+    justify-content: right;
+}
+
+.boton-pagar{
+    border: none;
+    background-color: $negro;
+    color: $blanco;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    margin: 2rem;
+    width: 100%;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.carrito-vacio{
+    padding: 2rem;
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+.footer{
+    padding: calc($separacion / 2) 0;
+    background-color: $terciario;
+    width: 100%;
+}
+.abajo{
+    @include tablet{
+        margin-top: 8rem;
+    }
+}
+.mas-abajo{
+    margin-top: 8rem;
+    @include tablet{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}

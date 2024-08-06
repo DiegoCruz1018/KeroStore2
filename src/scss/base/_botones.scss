@@ -1,0 +1,35 @@
+.boton-carrito-v1{
+    @include boton($sexto, inline-block);
+}
+.boton-agregar{
+    @include boton($sexto, block);
+    width: 100%;
+    height: 5rem;
+}
+.boton-submit{
+    @include boton($primario, inline-block);
+    @include tablet {
+        width: auto;
+    }
+}
+.boton-verde{
+    @include boton($verde, inline-block)
+}
+.boton-verde-block{
+    @include boton($verde, block)
+}
+.boton-datos{
+    @include boton($sexto, inline-block)
+}
+.boton-rojo-block{
+    @include boton($rojo, block);
+    width: 100%;
+}
+.boton-ver{
+    @include boton($secundario, inline-block);
+}
+// .boton-agregado{
+//     @include boton($cuarto, block);
+//     width: 100%;
+//     height: 5rem;
+// }
